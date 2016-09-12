@@ -10,7 +10,7 @@
 		"start": "node server.js"
 	},
 	"dependencies": {
-		"express": "^4.12.4",
+		"express": "^5.0.0-alpha.2",
 		"modernizr": "^3.3.1"
 	},
 	"engines": {
@@ -23,7 +23,8 @@
 	"keywords": [
 		"node",
 		"hyperdev",
-		"express"
+		"express",
+		"modernizr"
 	],
 	"license": "MIT"
 }

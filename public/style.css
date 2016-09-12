@@ -9,7 +9,7 @@
 }
 
 body {
-  font-family: helvetica, arial, sans-serif;
+  font-family:comic sans ms,  helvetica, arial, sans-serif;
   margin: 25px;
 }
 
@@ -74,6 +74,7 @@ form{
 }
 
 footer {
+  clear:both;
   margin-top: 50px;
   padding-top: 25px;
   border-top: 1px solid lightgrey;
@@ -145,4 +146,87 @@ li > span[contenteditable]:focus{
 
 #submit{
   margin-top:5px;
+}
+
+table{
+  border-collapse:collapse;
+  width:600px;
+
+}
+
+th{
+  background-color:cyan;
+}
+
+tr:nth-of-type(odd){
+  background-color:#e6ffff;
+}
+
+ th:nth-child(n+2), td:nth-child(n+2){
+   text-align: right;
+}
+
+tr:last-child{
+  font-weight:bold;
+}
+
+td:last-child{
+  font-weight:bolder;
+}
+
+tr:last-child, td:last-child{
+  font-size:24px;
+}
+
+tr:last-child{
+  border-top-style:solid;
+}
+
+tr:nth-last-child(2){
+  color:pink;
+}
+
+tr:nth-last-child(-n+3) td{
+  text-align:right;
+}
+
+#page_header{ width: 100%; }
+
+#page_header > nav > ul, #page_footer > nav > ul{
+  list-style: none;
+  margin: 0; 
+  padding: 0;
+}
+
+#page_header > nav > ul > li, footer > nav > ul > li{
+  margin: 0 20px 0 0;
+  padding: 0;
+  display: inline;
+}
+
+#posts{
+  float: left;
+  width: 74%;
+}
+#posts aside{
+  float: right;
+  font-size: 20px;
+  line-height: 40px;
+  margin-left: 5%;
+  width: 35%;
+}
+
+#sidebar{
+  float: left;
+  width: 25%;
+}
+
+@media only screen and (max-device-width:480px) {
+  body{width:480px;}
+  nav, section, header, footer{margin: 0 10px 0 10px;}
+  
+  #sidebar, #posts{
+    float: none;
+    width:100%;
+  }
 }

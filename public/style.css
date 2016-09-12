@@ -41,7 +41,7 @@ input {
   margin-bottom: 10px;
   padding: 5px;
   width: 100%;
-  border: 1px solid lightgrey;
+  border: 2px solid lightgrey;
   border-radius: 3px;
   font-size: 16px;
 }
@@ -94,4 +94,55 @@ footer nav > ul > li{
 
 .nicejob {
   text-decoration: line-through;
+}
+
+ol{
+  list-style:none;
+  margin:0;
+  padding:0;
+}
+
+ol li{
+  clear:both;
+  margin:0 0 10px 0;
+  padding: 0;
+}
+
+label{
+  float:left;
+  width:150px;
+}
+
+input:focus {
+  background-color:#ffe;
+}
+
+.simpleColorContainer, .simpleColorDisplay {
+  float:left;
+}
+
+input[required]:invalid, input[pattern]:invalid{
+  border-color:#A5340B;
+}
+
+input[required]:valid, input[pattern]:valid{
+  border-color:#0B9900;
+}
+
+ul{
+  list-style:none;
+}
+
+
+li > span[contenteditable]:hover{
+  background-color:#ffc;
+}
+
+li > span[contenteditable]:focus{
+  background-color:#ffa;
+  border: 1px shaded #000;
+}
+
+#submit{
+  margin-top:5px;
 }

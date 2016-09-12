@@ -1,12 +1,3 @@
-<!-- This is a static file -->
-<!-- served from your routes in server.js -->
-
-<!-- You might want to try something fancier: -->
-<!-- html/nunjucks docs: http://mozilla.github.io/nunjucks/ -->
-<!-- jade: http://jade-lang.com/ -->
-<!-- haml: http://haml.info/tutorial.html -->
-<!-- hbs(handlebars): http://handlebarsjs.com/expressions.html -->
-
 <!DOCTYPE html>
 <html>
   <head>
@@ -18,26 +9,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="/style.css">
   </head>
-  <body>
+  <body id="forms">
     <header>
-      <h1>
-        Welcome to Mango-Spike
-      </h1>
+      <h1>User Information</h1>
     </header>
 
     <main>
-     <h2>From here you can navigate the Website</h2>
-     <nav>
-       <ul>
-         <li><a href="dreams.html">Dreams</a></li>
-         <li><a href="faq.html">FAQ</a></li>
-         <li><a href="holiday_pay.html">Holiday Pay</a></li>
-         <li><a href="https://hyperdev.com">Remix this in HyperDev</a></li>
-         <li><a href="projecttracker.html">Project Tracker</a></li>
-         <li><a href="account_creation.html">Account Creation</a></li>
-         <li><a href="account.html">Show Accountdata</a></li>
-       </ul>
-     </nav>
+      <section id="edit_profil_link">
+        <p><a href="edit.html">Edit Your Profile</a></p>
+      </section>
+<div id="status"></div>
+<ul data-url="users/1">
+  <li>
+    <b>Name</b>
+    <span id="name" contenteditable>Hugh Mann</span>
+  </li>
+    <li>
+    <b>City</b>
+    <span id="city" contenteditable>Anytown</span>
+  </li>
+    <li>
+    <b>State</b>
+    <span id="state" contenteditable>OH</span>
+  </li>
+    <li>
+    <b>Postal Code</b>
+    <span id="postal_code" contenteditable>92110</span>
+  </li>
+    <li>
+    <b>Email</b>
+    <span id="email" contenteditable>boss@mango-spike.com</span>
+  </li>
+</ul>
     </main>
 
     <footer>
@@ -55,7 +58,7 @@
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"
             integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
             crossorigin="anonymous"></script>
-    <script src="/client.js"></script>
+    <script src="/edit.js"></script>
 
   </body>
 </html>

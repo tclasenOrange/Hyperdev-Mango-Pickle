@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Welcome to HyperDev!</title>
+    <meta name="description" content="A cool thing made with HyperDev">
+    <link id="favicon" rel="icon" href="https://hyperdev.com/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body id="forms">
+    <header>
+      <h1>User Information</h1>
+    </header>
+
+    <main>
+      <form  method="post" action="/users/1" accept-charset="utf-8">
+       <fieldset id="your_information">
+         <legend>Your Information</legend>
+         <ol>
+            <li>
+              <label for="name">Your Name</label>
+              <input type="text" name="name" id="name" value="" autofocus required/>
+            </li>
+            <li>
+              <label for="city">City</label>
+              <input type="text" name="city" id="city"  required/>
+            </li>
+            <li>
+              <label for="state">State</label>
+              <input type="text" name="state" id="state"  required/>
+            </li>
+            <li>
+              <label for="postal_code">Postal Code</label>
+              <input type="text" name="postal_code" id="postal_code"  required/>
+            </li>            
+            <li>
+              <label for="email">Email</label>
+              <input type="email" name="email" id="email" required/>
+            </li>
+          </ol>
+          </fieldset> 
+          <input  id="submit" type="submit"/>
+      </form>
+    </main>
+
+    <footer>
+        <nav> 
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="holiday_pay.html">Holiday Pay</a></li>
+            <li><a href="https://hyperdev.com">Remix this in HyperDev</a></li>
+          </ul>
+        </nav>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/edit.js"></script>
+
+  </body>
+</html>

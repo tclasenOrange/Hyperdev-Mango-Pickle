@@ -10,15 +10,26 @@
 
 body {
   font-family:comic sans ms,  helvetica, arial, sans-serif;
-  margin: 25px;
+margin:0px;
 }
 
+header {
+  position:fixed;
+  width:100%;
+  background-color:pink;
+  z-index:10;
+  vertical-align:middle;
+}
 
 h1 {
   font-weight: bold;
-  color: pink;
+  color: white;
+  background-color:pink;
 }
 
+main {
+  padding-top:90px;
+}
 
 
 .bold {

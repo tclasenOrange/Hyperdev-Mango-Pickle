@@ -13,10 +13,13 @@ body {
   margin: 25px;
 }
 
+
 h1 {
   font-weight: bold;
   color: pink;
 }
+
+
 
 .bold {
   font-weight: bold;
@@ -229,4 +232,13 @@ tr:nth-last-child(-n+3) td{
     float: none;
     width:100%;
   }
+}
+
+::selection {
+  color:white;
+  background-color:pink;
+}
+
+h1::selection {
+  background-color:cyan;
 }

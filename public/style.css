@@ -11,7 +11,7 @@
 body {
   font-family:comic sans ms,  helvetica, arial, sans-serif;
 margin:0px;
-padding-left:10px;
+
 }
 
 header.headerbar {
@@ -20,6 +20,7 @@ header.headerbar {
   background-color:pink;
   z-index:10;
   vertical-align:middle;
+  padding-left:5%;
 }
 
 h1 {
@@ -30,6 +31,7 @@ h1 {
 
 main {
   padding-top:90px;
+  padding-left:5%;
 }
 
 
@@ -49,6 +51,9 @@ form {
   width: 100%;
   max-width: 340px;
   border-radius: 3px;
+  border-style:solid;
+  padding:10px;
+  margin:10px;
 }
 
 input {
@@ -82,13 +87,8 @@ li {
   margin-bottom: 5px;
 }
 
-form{
-  padding:10px;
-  margin:10px;
-  border-style:solid;
-}
-
 footer {
+  padding-left:5%;
   clear:both;
   margin-top: 50px;
   padding-top: 25px;
@@ -252,6 +252,14 @@ tr:nth-last-child(-n+3) td{
 
 #newsletter{
   column-count:2;
+}
+
+#chatform {
+  display:inline-block;
+}
+
+#m {
+  display:inline-block;
 }
 
 ::selection {

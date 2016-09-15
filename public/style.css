@@ -11,9 +11,10 @@
 body {
   font-family:comic sans ms,  helvetica, arial, sans-serif;
 margin:0px;
+padding-left:10px;
 }
 
-header {
+header.headerbar {
   position:fixed;
   width:100%;
   background-color:pink;
@@ -132,6 +133,10 @@ input:focus {
   background-color:#ffe;
 }
 
+#container{
+ margin-top:50px;  
+}
+
 .simpleColorContainer, .simpleColorDisplay {
   float:left;
 }
@@ -243,6 +248,10 @@ tr:nth-last-child(-n+3) td{
     float: none;
     width:100%;
   }
+}
+
+#newsletter{
+  column-count:2;
 }
 
 ::selection {

@@ -10,15 +10,27 @@
 
 body {
   font-family:comic sans ms,  helvetica, arial, sans-serif;
-  margin: 25px;
+margin:0px;
+padding-left:10px;
 }
 
+header.headerbar {
+  position:fixed;
+  width:100%;
+  background-color:pink;
+  z-index:10;
+  vertical-align:middle;
+}
 
 h1 {
   font-weight: bold;
-  color: pink;
+  color: white;
+  background-color:pink;
 }
 
+main {
+  padding-top:90px;
+}
 
 
 .bold {
@@ -119,6 +131,10 @@ label{
 
 input:focus {
   background-color:#ffe;
+}
+
+#container{
+ margin-top:50px;  
 }
 
 .simpleColorContainer, .simpleColorDisplay {
@@ -232,6 +248,10 @@ tr:nth-last-child(-n+3) td{
     float: none;
     width:100%;
   }
+}
+
+#newsletter{
+  column-count:2;
 }
 
 ::selection {

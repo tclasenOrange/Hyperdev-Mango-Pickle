@@ -11,17 +11,14 @@
   </head>
   <body>
     <header class="headerbar">
-<h1>Mango-Spike Chat</h1>
+      <h1>Canvas HTML5</h1>
     </header>
 
     <main>
-    <ul id="messages"></ul>
-    <form action="" id="chatform">
-      <input id="name" type="text" placeholder="dein Name" />
-            <input id="text" type="text" autocomplete="off" placeholder="schreibe etwas..." />
-            <input id="senden" type="submit"  autocomplete="off" value="senden" />
-      <!--<input id="m" autocomplete="off" /><button>Send</button>-->
-    </form>
+      <canvas id="my_canvas" width="500" height="400"></canvas> 
+      <canvas id="logo" width="900" height="80">
+        <h1>Mango-Spike</h1>
+      </canvas>
     </main>
 
     <footer>
@@ -39,8 +36,7 @@
     <script src="https://code.jquery.com/jquery-2.2.1.min.js"
             integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
             crossorigin="anonymous"></script>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="/chatclient.js"></script>
+    <script src="/canvas.js"></script>
 
   </body>
 </html>

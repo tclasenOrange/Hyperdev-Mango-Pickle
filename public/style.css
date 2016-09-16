@@ -11,7 +11,7 @@
 body {
   font-family:comic sans ms,  helvetica, arial, sans-serif;
 margin:0px;
-padding-left:10px;
+
 }
 
 header.headerbar {
@@ -20,6 +20,7 @@ header.headerbar {
   background-color:pink;
   z-index:10;
   vertical-align:middle;
+  padding-left:5%;
 }
 
 h1 {
@@ -30,6 +31,7 @@ h1 {
 
 main {
   padding-top:90px;
+  padding-left:5%;
 }
 
 
@@ -49,6 +51,9 @@ form {
   width: 100%;
   max-width: 340px;
   border-radius: 3px;
+  border-style:solid;
+  padding:10px;
+  margin:10px;
 }
 
 input {
@@ -82,13 +87,8 @@ li {
   margin-bottom: 5px;
 }
 
-form{
-  padding:10px;
-  margin:10px;
-  border-style:solid;
-}
-
 footer {
+  padding-left:5%;
   clear:both;
   margin-top: 50px;
   padding-top: 25px;
@@ -225,19 +225,25 @@ tr:nth-last-child(-n+3) td{
 
 #posts{
   float: left;
-  width: 74%;
+  width: 60%;
+  margin-left:5%;
 }
 #posts aside{
   float: right;
   font-size: 20px;
   line-height: 40px;
-  margin-left: 5%;
-  width: 35%;
+  margin-left: 3%;
+  width: 15%;
 }
 
 #sidebar{
+  margin-left: 10%;
   float: left;
   width: 25%;
+}
+
+#sidebar, #posts {
+  margin-top:94px;
 }
 
 @media only screen and (max-device-width:480px) {
@@ -251,7 +257,31 @@ tr:nth-last-child(-n+3) td{
 }
 
 #newsletter{
-  column-count:2;
+  -webkit-column-count: 2;
+ 	
+  -webkit-column-gap: 20px;
+ 	
+  -webkit-column-rule: 1px solid #ddccb5;
+ 	
+     -moz-column-count: 2;
+ 	
+     -moz-column-gap: 20px;
+ 	
+     -moz-column-rule: 1px solid #ddccb5;
+ 	
+          column-count: 2;
+ 	
+          column-gap: 20px;
+ 	
+          column-rule: 1px solid #ddccb5;
+}
+
+#chatform {
+  display:inline-block;
+}
+
+#m {
+  display:inline-block;
 }
 
 ::selection {

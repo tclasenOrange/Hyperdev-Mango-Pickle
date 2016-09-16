@@ -18,13 +18,6 @@ app.get("/", function (request, response) {
   response.sendFile(__dirname + '/public/index.html');
 });
 
-io.on('connection', function (socket) {
-  socket.emit('news', { hello: 'world' });
-  socket.on('my other event', function (data) {
-    console.log(data);
-  });
-});
-
 app.get("/dreams", function (request, response) {
   response.send(dreams);
 });
@@ -49,3 +42,18 @@ var listener = app.listen(process.env.PORT, function () {
 
 var socket  = io.listen(listener);
 
+io.sockets.on('connection', function (socket) {
+	// der Client ist verbunden
+	socket.emit('chat', { zeit: new Date(), text: 'Du bist nun mit dem Server verbunden!' });
+	// wenn ein Benutzer einen Text senden
+	socket.on('chat', function (data) {
+		// so wird dieser Text an alle anderen Benutzer gesendet
+		io.sockets.emit('chat', { zeit: new Date(), name: data.name || 'Anonym', text: data.text });
+	});
+});
+/*io.on('connection', function (socket) {
+  socket.emit('news', { hello: 'world' });
+  socket.on('my other event', function (data) {
+    console.log(data);
+  });
+});*/

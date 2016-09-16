@@ -10,12 +10,11 @@ context.stroke();
      var centerX = canvas.width / 2;
       var centerY = canvas.height / 2;
       var radius = 100;
-var grd = context.createLinearGradient(0,0,0,40);
-grd.addColorStop(0,"red");
-grd.addColorStop(0.5,"orange");
-grd.addColorStop(0.75, "yellow");
-grd.addColorStop(1,"#40ff00");
-
+var grd = context.createLinearGradient(0,0,0,450);
+grd.addColorStop(0,"#40ff00");
+grd.addColorStop(0.25,"yellow");
+grd.addColorStop(0.5, "orange");
+grd.addColorStop(1,"red");
 
 
       context.beginPath();
@@ -81,7 +80,7 @@ context.restore();
 
     var bar = new RGraph.Bar('test', [50,25,15,10]);
     bar.Set('chart.gutter', 100);
-    bar.Set('chart.colors', ['red']);
+    bar.Set('chart.colors', [ 'yellow','green']);
     bar.Set('chart.title', "A bar graph of my favorite pies");
     bar.Set('chart.labels', ["Banana Creme", "Pumpkin", "Apple", "Cherry"]);
     bar.Draw();

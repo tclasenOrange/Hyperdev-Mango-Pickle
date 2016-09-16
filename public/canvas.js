@@ -85,6 +85,8 @@ context.restore();
     bar.Set('chart.title', "A bar graph of my favorite pies");
     bar.Set('chart.labels', ["Banana Creme", "Pumpkin", "Apple", "Cherry"]);
     bar.Draw();
+    
+   
 }else{
   
 }

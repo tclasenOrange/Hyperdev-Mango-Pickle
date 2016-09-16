@@ -225,19 +225,25 @@ tr:nth-last-child(-n+3) td{
 
 #posts{
   float: left;
-  width: 74%;
+  width: 60%;
+  margin-left:5%;
 }
 #posts aside{
   float: right;
   font-size: 20px;
   line-height: 40px;
-  margin-left: 5%;
-  width: 35%;
+  margin-left: 3%;
+  width: 15%;
 }
 
 #sidebar{
+  margin-left: 10%;
   float: left;
   width: 25%;
+}
+
+#sidebar, #posts {
+  margin-top:94px;
 }
 
 @media only screen and (max-device-width:480px) {

@@ -78,6 +78,13 @@ context.fill();
 context.closePath();
  	
 context.restore();
+
+    var bar = new RGraph.Bar('test', [50,25,15,10]);
+    bar.Set('chart.gutter', 100);
+    bar.Set('chart.colors', ['red']);
+    bar.Set('chart.title', "A bar graph of my favorite pies");
+    bar.Set('chart.labels', ["Banana Creme", "Pumpkin", "Apple", "Cherry"]);
+    bar.Draw();
 }else{
   
 }
